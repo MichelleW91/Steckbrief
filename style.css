@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+    text-decoration:underline;
+}
+
+.größer {
+font-size: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.bilder {
+    display: flex;
+    justify-content: space-around;
+}
