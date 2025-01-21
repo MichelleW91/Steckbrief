@@ -1,6 +1,7 @@
 h1 {
     text-align: center;
     text-decoration:underline;
+    background-color:rgb(213, 233, 243);
 }
 
 .größer {
@@ -16,4 +17,9 @@ h2 {
 .bilder {
     display: flex;
     justify-content: space-around;
+}
+#Gif {
+    margin: auto;
+    text-align: center;
+    display: flex;
 }
