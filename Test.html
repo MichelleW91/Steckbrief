@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steckbrief Huskys</title>
+    <style>
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /* Style the header */
+        header {
+          background-color: lightskyblue;
+          padding: 15px;
+          text-align: center;
+          font-size: 10px;
+          color: black;
+        }
+        
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+          float: left;
+          width: 30%;
+          height: 490px; /* only for demonstration, should be removed */
+          background: lightcyan;
+          padding: 20px;
+        }
+        
+        /* Style the list inside the menu */
+        nav ul {
+          list-style-type: none;
+          padding: 0;
+        }
+        
+        article {
+          float: left;
+          padding: 30px;
+          width: 70%;
+          background-color: lightblue;
+          height: 490px; /* only for demonstration, should be removed */
+        }
+        
+        /* Clear floats after the columns */
+        section::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Style the footer */
+        footer {
+          background-color: lightskyblue;
+          padding: 10px;
+          text-align: center;
+          color: black;
+        }
+        
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+          nav, article {
+            width: 100%;
+            height: auto;
+          }
+        }
+        </style>
+</head>
+<button type="button" onclick="alert('Bist du wirklich bereit?')">Klick hier!</button>
+<body>
+<header>
+    <div style="text-align: right;" class="search-container">
+        <input type="text" id="searchInput" class="search-bar" placeholder="Suche...">
+        <button class="search-button" onclick="performSearch()">Suchen</button>
+    </div>
+  <h2 style="font-size:xx-large;">Steckbrief</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Galerie</a></li>
+      <li><a href="#">Herkunft</a></li>
+      <li><a href="#">Wissenswertes</a></li>
+    </ul>
+    <div class="video-container">
+        <h2>Was dich erwartet:</h2></div>
+        <iframe width="520" height="315" src="https://www.youtube.com/embed/7qacy2O2xiw?si=iQS3coheR0X4n2Ux"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+        </iframe>
+    </div>
+  </nav>
+  
+  <article>
+    
+    <h1>Der Sibirian Husky</h1>
+    <h5>Herkunft und Zucht</h5>
+    <p>Anfang des 20. Jahrhunderts kamen die Huskys von Sibirien nach Alaska.<br>Es wird vermutet, dass sein
+        Name ursprünglich Esky lautete,<br>quasi als Spitzname für die Hunde der Eskimos. Daraus wurde
+        irgendwann Husky.</p>
+    <h5>Fellpflege</h5>
+
+    <p>Zweimal im Jahr verlieren Huskys beim Fellwechsel besonders viele Haare.<br>Ansonsten bewegen sich
+        sich allerdings im Mittelfeld.<br>Sein Fell sollte mindestens einmal in der Woche gut gebürstet
+        werden.</p>
+    <h5>Erziehung und Training der Welpen</h5>
+    <p>Huskys sind überaus freundliche, aufgeschlossene und gehorsame Hunde,<br>aber ihr Training erfordert
+        viel Geschick und Erfahrung. Sie testen gerne<br>ihre Grenzen aus,<br>deshalb ist es wichtig, nicht
+        nachzugeben, sondern ruhig und bestimmt<br>deutlich zu machen,<br>wer „Rudelführer“ ist. Das erfordert
+        viel Disziplin! Huskys sind also<br>eher was für erfahrene Hundebesitzer.</p>
+
+  </article>
+</section>
+
+<footer>
+  <p>KOMMT NOCH</p>
+  <a href="http://127.0.0.1:5500/RACE.html">Zum Husky Rennen!</a>
+  <div class="husky-facts">
+    <h2>Wissenswertes</h2>
+    <p>Huskys stammen ursprünglich aus Sibirien.</p>
+    <a href="https://de.wikipedia.org/wiki/Sibirischer_Husky" target="_blank">
+        
+        </a>
+        Mehr über Huskys
+    
+c
+
+    <table bord="1">
+        <tr>
+            <th>Merkmal</th>
+            <th>Beschreibung</th>git löo
+        </tr>
+        <tr>
+            <td>Ursprung</td>
+            <td>Sibirien</td>
+        </tr>
+        <tr>
+            <td>Temperament</td>
+            <td>Freundlich, loyal, energiegeladen</td>
+        </tr>
+    </table>
+    <form>
+        <label for="name">Ihr Lieblingsname für einen Husky:</label>
+        <input type="text" id="name" name="name">
+        <button type="submit">Absenden</button>
+    </form>
+
+</div>
+</footer>
+
+
+</body>
+</html>
